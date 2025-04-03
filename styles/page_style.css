@@ -1,0 +1,245 @@
+/* 
+colour pallete
+#2E0F38 (dark dark blue) ((footer))
+#1A2C54 (dark blue / teal) ((header))
+#8351A8 (purple)
+#4D7B93 (teal)
+#B45DBB (lighter purple)
+#dadada (white)
+
+*/
+
+/* font styles */
+h1,h2,h3,h4{
+    color: #dadada;
+    font-family: "Titan One";
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-shadow:  3px 3px black;
+}
+h2 {font-size: 2em;}
+h3{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+p{
+    font-family: monospace;
+    font-size: 1.2em;
+
+}
+
+
+body{
+    background-color: #8351A8 ;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,25%);
+    grid-template-areas: 
+    "head head head head"
+    "title title title title"
+    "main main main main"
+    "foot foot foot foot";
+    margin: 0;
+}
+
+
+/* ---- HOMEPAGE ----- */
+/* homepage title */
+section.title{
+    grid-area: title;
+    background-image: url(../img/space_title_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh;
+
+}
+.title div{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+main{
+    grid-area: main;
+    background-color: #8351A8;
+    justify-items: center;
+}
+
+main.homepage section{
+    border-top:  2px solid #dadada;
+    padding: 5%;
+}
+
+main.homepage section.form{
+    
+    width: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+
+/* ---- LOGIN AND SIGNUP FORM STYLING ---- */
+form div.side {
+    display: flex;
+}
+form div.side p {
+    margin: 2% 1%;
+    border: #1A2C54 3px inset;
+}
+
+input[type="submit"]{
+    width: 103%;
+    height: 30px;
+    border: #1A2C54 5px outset;
+}
+
+
+
+
+
+
+
+
+/* ---- CATALOGUE PAGE ---- */
+main.catalogue{
+    margin-top: 150px;
+    
+}
+
+main.catalogue section:nth-child(2){
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    height: 100vh;
+}
+
+/* crud table section styling */
+div.crudTable{
+    text-align: center;
+    justify-self: center;
+    height: 100%;
+}
+
+
+
+
+div.crudTable table{
+    table-layout: fixed;
+    justify-self: center;
+    
+    width: 80%;
+    border: #1A2C54  5px solid;
+    background-color: #B45DBB;
+    border-collapse: collapse;
+    max-width: 700px;
+    min-width: 400px;
+}
+
+div.crudTable table tbody tr:nth-child(odd){background-color: #ffffff2f;}
+div.crudTable table tbody tr:nth-child(even){background-color: #ffffff69;}
+
+
+/* table border colours + style for when content overflows (adds scrollbar) */
+div.crudTable table th{
+    text-align: center;
+    border-bottom: #8351A8 2px solid;
+}
+div.crudTable table tr{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+tbody{
+    display: block;
+    flex-direction: column;
+    width: auto;
+    max-height: 650px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+div.crudTable table td{
+    text-align: center;
+    padding: 15px;
+    border-bottom: #8351A8 2px solid;
+    font-family: monospace;
+    font-size: 1.1em;
+    
+}
+
+/* create / update button column*/
+table th a button, table td a button {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0;
+    border: 2px #8351A8 solid;
+    background-color: #B45DBB;
+}
+table th a button img, table td a button img{
+    width: auto;
+    height: 100%;
+}
+
+/* planet view section styling */
+div.objectInfo div:nth-child(1){
+    width: 75%;
+    height: 50%;
+    background-image: url(../img/planet1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    justify-self: center;
+    
+}
+
+div.objectInfo div:nth-child(2){
+    text-align: center;
+}
+
+
+
+
+
+
+/* ----- ADD AND UPDATE CRUD PAGES ----- */
+main.addnup{
+    margin: 20% 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

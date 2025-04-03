@@ -1,0 +1,126 @@
+/* styling for the top navigation bar and footer */
+header{
+    grid-area: head;
+    background-color: #1A2C54 ;
+    
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: auto;
+    height: 100px;
+}
+
+/* navigation list style */
+nav{
+    width: 20vh;
+    position: fixed;
+    text-align: center;
+}
+label{
+    font-size: 1.6em;
+    font-family: monospace;
+    font-weight: 600;
+    color: #dadada;
+}
+label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+/* hide checkbox default square */
+header input{appearance: none; position: fixed;}
+
+
+/* make extra options visible when clicking menu */
+input ~ div nav {
+visibility:hidden;
+}
+input:checked ~ div nav {
+    visibility:visible;
+}
+menu{
+    border-top: 2px solid #dadada;
+    background-color: #1A2C54;
+    margin: 0;
+    padding: 10%;
+
+}
+menu li {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+/* navigation specific adjustments */
+div.navMenu1, div.navMenu2 {padding: 0 5%;}
+
+div.navMenu1 div nav{
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+    left: 0;
+    
+}
+
+div.navMenu2 div nav{
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+    right: 0;
+    
+}
+
+nav menu li a{
+    color: #dadada;
+    font-family: monospace;
+}
+nav menu li a:hover{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --- footer --- */
+footer{
+    grid-area: foot;
+    background-color: #2E0F38 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
